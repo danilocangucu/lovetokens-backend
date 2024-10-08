@@ -8,6 +8,8 @@ dotenv.config();
 const mongodbUrl = process.env.MONGODB_URL as string;
 const port = process.env.PORT as string;
 
+// TODO Compare package.json from ec2 and local
+
 mongoose
   .connect(mongodbUrl, {
     dbName: "lovetokens",
